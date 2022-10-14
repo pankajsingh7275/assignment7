@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+int main()
+{ 
+    int i,n,pre=0,cur=1,next=0;
+    printf("enter a number n to print fibonaci series in which n terms\n");
+    scanf("%d",&n);
+    printf("1");
+    for(i=1;i<n;i++)
+    {
+        next=pre+cur;
+        pre=cur;
+        cur=next;
+        printf("\n%d",next);
+    }
+
+    return 0;
+}

@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main()
+{ 
+    int i,n,pre=0,cur=1,next=0;
+    printf("enter a number to find nth term of fibonacci series");
+    scanf("%d",&n);
+
+      for(i=1;i<n;i++)
+       {
+        next=pre+cur;
+        pre=cur;
+        cur=next;
+        
+        }
+    
+      printf("\n%d",next);
+    return 0;
+}
