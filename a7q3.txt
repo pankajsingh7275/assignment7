@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main()
+{ 
+    int i,n,pre=0,cur=1,next=0,flag=0;
+    printf("enter a number to find that number is in the fibonaci series or not");
+    scanf("%d",&n);
+
+      for(i=1;i<n;i++)
+       {
+        next=pre+cur;
+        pre=cur;
+        cur=next;
+        if(n==next)
+        {
+            flag=1;
+            break;
+        }
+        
+        }
+        if(flag==1)
+        printf("number found");
+        else
+        printf("number not found");
+    
+    
+    return 0;
+}
